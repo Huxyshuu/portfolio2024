@@ -1,0 +1,220 @@
+.sidebar {
+	--sidebar_animtime: 500ms;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(15px);
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	align-items: center;
+	height: 100vh;
+	width: 11.3vh;
+	border-right: 0.1vh solid rgba(255, 255, 255, 0.5);
+	transition: all ease-in-out var(--sidebar_animtime);
+
+	&.open {
+        width: 25vh;
+    }
+
+	#sidebar-name {
+            opacity: 1;
+    }
+    
+	&.open {
+		#sidebar-url {
+			opacity: 1;
+		}
+		#side-logo {
+			margin: 2vh;
+			transition-delay: 200ms;
+		}
+		#side-button {
+			color: white;
+			transform: translateX(12.4vh);
+		}
+		#side-button-icon {
+			transform: rotate(540deg);
+		}
+		#sectionDivider {
+			width: 80%;
+		}
+		.sidebar-section {
+			opacity: 1;
+			transition-delay: 500ms;
+		}
+		.icon-text {
+			opacity: 1;
+			transition-delay: 200ms;
+		}
+		.sidebar-icons {
+			width: 17.6vh;
+		}
+		.sidebar-media {
+			width: 17.6vh;
+		}
+		#sidebar-copyright {
+			font-size: 1.2vh;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 200;
+			opacity: 1;
+			transition-delay: 300ms;
+		}
+	}
+}
+
+.sidebar-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-name {
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-size: 120%;
+	font-weight: 400;
+	font-family: 'Roboto Condensed', sans-serif;
+	opacity: 0;
+	transition: all ease-in-out calc(var(--sidebar_animtime) * 0.4);
+	transition-delay: 50ms;
+	text-align: center;
+}
+
+#sidebar-url {
+	color: rgba(255, 255, 255, 0.5);
+	margin: 0;
+	padding: 0;
+	font-size: 120%;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 200;
+	opacity: 0;
+	transition: all ease-in-out calc(var(--sidebar_animtime) * 0.4);
+	transition-delay: 50ms;
+	text-align: center;
+	margin-bottom: 3vh;
+}
+
+#side-logo {
+	align-self: center;
+	width: 8vh;
+	margin: 1.5vh;
+	transition-delay: 50ms;
+	transition: all ease-in-out var(--sidebar_animtime);
+}
+
+#side-button {
+	position: absolute;
+	color: white;
+	transform: translateX(5.6vh);
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(15px);
+	height: 4.5vh;
+	width: 3vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0% 30% 30% 0%;
+	font-size: 3vh;
+	transition: all ease-in-out var(--sidebar_animtime);
+}
+
+#side-button-icon {
+	transition: font-size ease-in-out 150ms;
+	transition: transform ease-in-out var(--sidebar_animtime);
+	&:hover {
+		font-size: 5rem;
+		cursor: pointer;
+	}
+}
+
+#sectionDivider {
+	align-self: flex-start;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 0%;
+	height: 0.1vh;
+	transform: translate(2.5vh, 1vh);
+	transition: all ease-in-out var(--sidebar_animtime);
+}
+
+.sidebar-section {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 1.5vh;
+	align-self: flex-start;
+	margin: 0.8vh 2.6vh 2vh 2.6vh;
+	opacity: 0;
+	transition: all ease-in-out var(--sidebar_animtime);
+	transition-delay: 50ms;
+	transform: translateY(2vh);
+}
+
+.icon-text {
+	position: absolute;
+	font-size: 2vh;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	opacity: 0;
+	transition: all ease-in-out calc(var(--sidebar_animtime) * 0.4);
+	transition-delay: 50ms;
+	transform: translateX(3.5rem);
+}
+
+.sidebar-icons {
+	color: white;
+	font-size: 4vh;
+	margin: 1vh;
+	padding: 1vh;
+	height: 4vh;
+	width: 4vh;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	transition: background-color ease-in-out calc(var(--sidebar_animtime) * 0.1),
+        width ease-in-out var(--sidebar_animtime);
+	&:hover {
+		background-color: rgba(77,77,77, 0.4);
+		cursor: pointer;
+	}
+	&:active {
+		background-color: var(--highlight-color);
+	}
+}
+
+.sidebar-media {
+	color: white;
+	font-size: 4vh;
+	margin: 1vh;
+	padding: 1vh;
+	height: 4vh;
+	width: 4vh;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	transition: background-color ease-in-out calc(var(--sidebar_animtime) * 0.1),
+        width ease-in-out var(--sidebar_animtime);
+	&:hover {
+		background-color: rgba(77,77,77, 0.4);
+		cursor: pointer;
+	}
+	&:active {
+		background-color: var(--highlight-color);
+	}
+}
+
+#sidebar-copyright {
+	position: absolute;
+	color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	font-size: 0.9vh;
+	width: 100%;
+	height: 4vh;
+	transition: calc(var(--sidebar_animtime) * 0.8);
+	opacity: 0;
+	bottom: 0;
+}
