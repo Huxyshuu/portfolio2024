@@ -6,6 +6,20 @@ function Sidebar(props) {
 
     const {open, setOpen} = props;
 
+    const menuButton = () => {
+        setOpen(!open)
+        const content = document.getElementsByClassName('mainContent')[0]
+        const root = document.querySelector(':root');
+
+        if (!open) {
+            content.style.marginLeft = getComputedStyle(root).getPropertyValue('--sidebar-width-open')
+            // const finalWidth = parseFloat(width.substring(0, width.length - 2)) + 3;
+            // content.style.marginLeft = finalWidth + 'vh'
+        } else {
+            content.style.marginLeft = getComputedStyle(root).getPropertyValue('--sidebar-width-closed')
+        }
+    }
+
     return (
         <div className={'sidebar ' + (open ? 'open' : '')}>
             <div className="sidebar-logo">
@@ -15,7 +29,7 @@ function Sidebar(props) {
             </div>
 
             <div>
-                <div id="side-button" onClick={() => setOpen(!open)}>
+                <div id="side-button" onClick={menuButton}>
                     <Icon id="side-button-icon" icon="material-symbols:chevron-right-rounded" />
                 </div>
             </div>
