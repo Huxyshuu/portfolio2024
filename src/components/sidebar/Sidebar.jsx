@@ -59,11 +59,11 @@ function Sidebar(props) {
 
             <h3 className="sidebar-section">Socials</h3>
             <div>
-                <div className="sidebar-media">
+                <div className="sidebar-media" onClick={() => window.location.href = "https://www.linkedin.com/in/hugotamm/"}>
                     <Icon icon="ph:linkedin-logo-bold" />
                     <h3 className="icon-text">LinkedIn</h3>
                 </div>
-                <div className="sidebar-media">
+                <div className="sidebar-media" onClick={() => window.location.href = "https://github.com/Huxyshuu"}>
                     <Icon icon="codicon:github" />
                     <h3 className="icon-text">GitHub</h3>
                 </div>
