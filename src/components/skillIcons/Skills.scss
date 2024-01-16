@@ -1,0 +1,193 @@
+/* 
+Used fonts
+
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Inria Sans', sans-serif; 300 400 400i 700
+
+JAPANESE
+font-family: 'Kosugi Maru', sans-serif;
+font-family: 'Murecho', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Murecho:wght@300&display=swap');
+
+#about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5vh;
+    margin-top: 30vh;
+}
+
+#aboutInfo {
+    margin-top: 5vh;
+    margin-right: 5vh;
+    transition: 0.3s ease-in-out;
+}
+
+.skills {
+    width: 100%;
+    display: grid; 
+    margin-left: -3vh;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."; 
+}
+
+.skills p {
+    font-size: 7vh;
+    margin: 1vh;
+    padding: 2vh;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+.skills p:hover {
+    transform: scale(1.4);
+}
+
+#sideby {
+    justify-content: space-between;
+}
+
+
+.text-highlights {
+    color: var(--highlight-color);
+}
+
+.text-highlights:hover {
+    color: var(--highlight-color);
+}
+
+#interwebs:hover::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/interweb.png);
+    background-repeat: no-repeat;
+    transform: translate(2vh, -2vh);
+    width: 200px;  /* These are just large enough to definitely   */
+    height: 200px; /* contain the image. Image could be any size. */
+    z-index: 12;
+}
+
+#problems:hover::after {
+    content: '';
+    position: absolute;
+    background-image: url(https://projecteuler.net/profile/AsTrone.png);
+    background-repeat: no-repeat;
+    transform: translate(2vh, -2vh);
+    width: 200px;  /* These are just large enough to definitely   */
+    height: 200px; /* contain the image. Image could be any size. */
+    z-index: 12;
+}
+
+
+@media screen and (min-width: 444px) {
+    #aboutInfo {
+        font-size: 2.2vh;
+    }
+
+    .skills {
+        margin: 0;
+    }
+
+    .skills p {
+        font-size: 7vh;
+        width: 13vw;
+    }
+}
+
+@media screen and (min-width: 530px) {
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+            ". . . ."
+            ". . . ."
+            ". . . ."; 
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h3 {
+        font-size: 6vh;
+    }
+
+    #about {
+        margin-left: 7vh;
+    }
+
+    .skills p {
+        font-size: 9vw;
+        width: 9vw;
+    }
+
+    #aboutInfo {
+        width: 65vh;
+    }
+}
+
+@media screen and (min-width: 832px) {
+    #about {
+        height: 80vh;
+        margin-left: 10vh;
+    }
+    
+    #sideby {
+        display: flex;
+    }
+    
+    #aboutInfo {
+        width: 100%;
+        font-size: 2.5vh;
+    }
+    
+    h3 {
+        font-size: 7vh;
+    }
+
+    .skills p {
+        margin: 0;
+        font-size: 8vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    #about {
+        margin-left: 25vh;
+    }
+
+    #aboutInfo {
+        width: 50vh;
+    }
+
+    .skills p {
+        font-size: 9vh;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    #aboutInfo {
+        width: 50vh;
+    }
+
+    .skills {
+        margin-left: 15vh;
+    }
+
+    .skills p {
+        font-size: 9vh;
+        margin-bottom: 5vh;
+        width: 10vh;
+    }
+}

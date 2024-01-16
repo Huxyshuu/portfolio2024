@@ -82,9 +82,39 @@ font-family: 'Roboto Condensed', sans-serif; */
         }
       }
 
+      #scrollDown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 47vw;
+        top: 90vh;
+        animation: upAndDown 2s linear infinite alternate;
+      }
+
       #arrow-down {
         color: white;
+        font-size: 4vh;
       }
+
+      #text-down {
+        color: white;
+        font-size: 1.5vh;
+      }
+
+      @keyframes upAndDown {
+        0% {
+          -webkit-transform: translateY(-2vh);
+                  transform: translateY(-2vh);
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+    }
     }
 
     .section {
@@ -107,11 +137,15 @@ font-family: 'Roboto Condensed', sans-serif; */
         width: 35vw;
       }
 
-      #workSection {
+      #workContent {
         margin: 0;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
       }
+    }
+
+    #aboutSection {
+      
     }
 }

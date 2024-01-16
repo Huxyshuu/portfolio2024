@@ -37,12 +37,12 @@ function Sidebar(props) {
             <h3 className="sidebar-section">Navigation</h3>
             <div>
                 <div className="sidebar-icons">
-                    <Icon icon="mdi:user-circle-outline" />
-                    <h3 className="icon-text">About</h3>
-                </div>
-                <div className="sidebar-icons">
                     <Icon icon="ic:baseline-work-outline" />
                     <h3 className="icon-text">Work</h3>
+                </div>
+                <div className="sidebar-icons">
+                    <Icon icon="mdi:user-circle-outline" />
+                    <h3 className="icon-text">About</h3>
                 </div>
                 <div className="sidebar-icons">
                     <Icon icon="carbon:skill-level-intermediate" />
