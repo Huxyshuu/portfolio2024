@@ -173,14 +173,16 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	transition: background-color ease-in-out calc(var(--sidebar_animtime) * 0.1),
+	transition: all ease-in-out calc(var(--sidebar_animtime) * 0.2),
         width ease-in-out var(--sidebar_animtime);
 	&:hover {
 		background-color: rgba(77,77,77, 0.4);
 		cursor: pointer;
+		color: var(--highlight-color);
 	}
 	&:active {
 		background-color: var(--highlight-color);
+		color: white;
 	}
 }
 
@@ -196,14 +198,16 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	transition: background-color ease-in-out calc(var(--sidebar_animtime) * 0.1),
+	transition: all ease-in-out calc(var(--sidebar_animtime) * 0.2),
         width ease-in-out var(--sidebar_animtime);
 	&:hover {
 		background-color: rgba(77,77,77, 0.4);
 		cursor: pointer;
+		color: var(--highlight-color);
 	}
 	&:active {
 		background-color: var(--highlight-color);
+		color: white;
 	}
 }
 

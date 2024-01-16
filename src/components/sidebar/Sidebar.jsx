@@ -1,6 +1,5 @@
 import './Sidebar.scss';
 import { Icon } from '@iconify/react';
-import logoImage from '../../assets/ht-logo-white.png';
 
 function Sidebar(props) {
 
@@ -8,7 +7,7 @@ function Sidebar(props) {
 
     const menuButton = () => {
         setOpen(!open)
-        const content = document.getElementsByClassName('mainContent')[0]
+        const content = document.getElementById('sidebarMargin');
         const root = document.querySelector(':root');
 
         if (!open) {
@@ -23,7 +22,7 @@ function Sidebar(props) {
     return (
         <div className={'sidebar ' + (open ? 'open' : '')}>
             <div className="sidebar-logo">
-                <img id="side-logo" src={logoImage} alt="logo" />
+                <img id="side-logo" src={"/public/ht-logo-green-dot.png"} alt="logo" />
                 <h2 id="sidebar-name">Hugo Tamm</h2>
                 <h3 id="sidebar-url">huxystudios.com</h3>
             </div>
@@ -70,7 +69,7 @@ function Sidebar(props) {
             </div>
 
             <div id="sidebar-copyright">
-                <p>© 2022 Hugo Tamm. All Rights Reserved.</p>
+                <p>© 2024 Hugo Tamm. All Rights Reserved.</p>
             </div>
         </div>
     )

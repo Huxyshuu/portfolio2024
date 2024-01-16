@@ -4,8 +4,9 @@ font-family: 'Roboto Condensed', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --highlight-color: #06ADD2;
-  --dark: #1D1D1D;
+  --highlight-color: #00b381;
+  --dark: #141612;
+  --white: white;
   --sidebar-width-closed: 11.3vh;
   --sidebar-width-open: 25vh;
   --sidebar_animtime: 500ms;
@@ -13,14 +14,119 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 * {
   font-family: 'Roboto', sans-serif;
+
+  ::-webkit-scrollbar {
+    width: 0;
+    z-index: -1;
+  }
+
+  h1 {
+    font-family: 'Butler', sans-serif;
+    letter-spacing: 0.3rem;
+  }
 }
 
 .App {
   background-color: var(--dark);
 }
 
+#sidebarMargin {
+  margin-left: var(--sidebar-width-closed);
+  transition: all ease-in-out var(--sidebar_animtime);
+}
+
+#home {
+  white-space: pre-line;
+  margin: 0;
+  margin-left: 10vh;
+  padding: 0;
+  height: 100vh;
+  margin-left: var(--sidebar-width-closed);
+  transition: all ease-in-out var(--sidebar_animtime);
+
+  h1 {
+    font-size: 10vh;
+    z-index: -1;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 15vh; 
+    line-height: 1.1;
+    transition: 0.3s ease-in-out;
+    white-space: nowrap;
+  }
+
+  p {
+    font-weight: 200;
+    color: #a2a2a2;
+    font-size: 2.5vh;
+    white-space: nowrap;
+    letter-spacing: 0.3vh;
+  }
+
+  #H {
+    color: var(--highlight-color);
+    font-family: 'Butler', sans-serif;
+  }
+
+  button {
+    font-weight: 200;
+    padding: 1vh 4vh; 
+    font-size: 2.5vh;
+    color: var(--highlight-color);
+    background-color: transparent;
+    border: 0.1vh solid var(--highlight-color);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    z-index: 1;
+    align-self: flex-start;
+    margin-top: 8vh;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: var(--highlight-color);
+      color: #1D1D1D;
+      cursor: pointer;
+    }
+  }
+
+  #scrollDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 47vw;
+    top: 90vh;
+    animation: upAndDown 2s linear infinite alternate;
+  }
+
+  #arrow-down {
+    color: white;
+    font-size: 4vh;
+  }
+
+  #text-down {
+    color: white;
+    font-size: 1.5vh;
+  }
+
+  @keyframes upAndDown {
+    0% {
+      -webkit-transform: translateY(-2vh);
+              transform: translateY(-2vh);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+}
+
 .mainContent {
   margin-left: var(--sidebar-width-closed);
+  margin-right: 20vh;
   transition: all ease-in-out var(--sidebar_animtime);
 
     & > div {
@@ -28,102 +134,60 @@ font-family: 'Roboto Condensed', sans-serif; */
       margin-left: 10vh;
       padding: 0;
       height: 100vh;
-
-      h1 {
-        margin: 0;
-        padding: 0;
-      }
     }
 
-    #home {
-      white-space: pre-line;
-
-      h1 {
-        font-size: 10vh;
-        z-index: -1;
-        color: white;
-        margin: 0;
-        padding-top: 15vh; 
-        line-height: 1.1;
-        transition: 0.3s ease-in-out;
-        white-space: nowrap;
-      }
+    #divider {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 1;
 
       p {
-        font-weight: 200;
-        color: #a2a2a2;
-        font-size: 2.5vh;
-        white-space: nowrap;
-        letter-spacing: 0.5vh;
-      }
-
-      #H {
-        color: var(--highlight-color);
-      }
-
-      button {
-        font-family: 'Inria Sans', 'Murecho', sans-serif, 'Times New Roman';
-        font-weight: 200;
-        padding: 1vh 4vh; 
-        font-size: 2.5vh;
-        color: var(--highlight-color);
-        background-color: transparent;
-        border: 0.1vh solid var(--highlight-color);
-        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-        z-index: 1;
-        align-self: flex-start;
-        margin-top: 8vh;
-        white-space: nowrap;
-
-        &:hover {
-          background-color: var(--highlight-color);
-          color: #1D1D1D;
-          cursor: pointer;
-        }
-      }
-
-      #scrollDown {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        font-size: 1rem;
+        font-weight: 500;
+        width: auto;
+        padding-inline: 1rem;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(355deg,#822e01,#a7501a 13%,#e7a776 55%,#fdb993 33%,#ffd5bd 60%,#fdb993 58%,#db8d5d 67%,#ba6329 89%,#822e01);
+        -webkit-background-clip: text;
+        background-clip: text;
         align-items: center;
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        left: 47vw;
-        top: 90vh;
-        animation: upAndDown 2s linear infinite alternate;
+        display: flex;
+        overflow: hidden;
       }
 
-      #arrow-down {
-        color: white;
-        font-size: 4vh;
+      #divider-line {
+        background-color: rgba(255, 255, 255, 0.200);
+        width: 100%;
+        height: 2px;
+        margin-top: 1.9rem;
+        margin-inline: 2rem;
       }
 
-      #text-down {
-        color: white;
-        font-size: 1.5vh;
-      }
+      #divider-icon-container {
+        width: 5rem;
+        height: 4rem;
+        background-color: var(--highlight-color);
+        border-radius: 50%;
+        margin-inline: 1rem;
 
-      @keyframes upAndDown {
-        0% {
-          -webkit-transform: translateY(-2vh);
-                  transform: translateY(-2vh);
+        #divider-icon {
+          font-size: 2.5rem;
+          color: white;
+          margin-top: 0.7rem;
+          margin-left: 0.9rem;
         }
-        100% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-        }
-    }
+      }
     }
 
     .section {
+      padding-top: 15vh;
+
       h1 {
         font-size: 7vh;
         z-index: -1;
         color: white;
         margin: 0;
-        padding-top: 15vh; 
+        padding-top: 5vh; 
         line-height: 1.1;
         transition: 0.3s ease-in-out;
         white-space: nowrap;
@@ -146,6 +210,6 @@ font-family: 'Roboto Condensed', sans-serif; */
     }
 
     #aboutSection {
-      
+
     }
 }
