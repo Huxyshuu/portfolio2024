@@ -129,6 +129,34 @@ font-family: 'Roboto Condensed', sans-serif; */
   margin-right: 20vh;
   transition: all ease-in-out var(--sidebar_animtime);
 
+  .ellipse-gray {
+    margin-left: -10rem;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 0 0 20rem 4rem rgb(134, 134, 134);
+  }
+
+  .ellipse-copper {
+    position: relative;
+    top: 30rem;
+    right: -5rem;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 0 0 25rem 6rem rgb(195, 126, 70);
+  }
+
+  .ellipse-highlight {
+    position: relative;
+    top: 30rem;
+    left: -5rem;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 0 0 25rem 4rem var(--highlight-color);
+  }
+
     & > div {
       margin: 0;
       margin-left: 10vh;
@@ -143,9 +171,9 @@ font-family: 'Roboto Condensed', sans-serif; */
 
       p {
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 600;
         width: auto;
-        padding-inline: 1rem;
+        padding-right: 1rem;
         -webkit-text-fill-color: transparent;
         background-image: linear-gradient(355deg,#822e01,#a7501a 13%,#e7a776 55%,#fdb993 33%,#ffd5bd 60%,#fdb993 58%,#db8d5d 67%,#ba6329 89%,#822e01);
         -webkit-background-clip: text;

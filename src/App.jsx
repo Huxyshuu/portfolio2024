@@ -45,6 +45,7 @@ function App() {
                 </p>
                 <Card />
               </div>
+              <div className="ellipse-gray"></div>
             </div>
             <div className="section" id="aboutSection">
               <div id="divider">
@@ -53,6 +54,7 @@ function App() {
                 <div id="divider-icon-container">
                   <Icon id="divider-icon" icon="mdi:user-circle-outline" />
                 </div>
+                <div className="ellipse-copper"></div>
               </div>
               <h1>About</h1>
               <div>
@@ -67,6 +69,7 @@ function App() {
             <div className="section" id="skills">
               <div id="divider">
                 <p id="copper-text">SKILLS</p>
+                <div className="ellipse-highlight"></div>
                 <div id="divider-line"></div>
                 <div id="divider-icon-container">
                   <Icon id="divider-icon" icon="carbon:skill-level-intermediate" />
