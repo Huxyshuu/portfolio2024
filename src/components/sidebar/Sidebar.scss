@@ -50,6 +50,14 @@
 		.sidebar-media {
 			width: 17.6vh;
 		}
+
+		#sidebar-copyright {
+			font-size: 1.2vh;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 200;
+			opacity: 1;
+			transition-delay: 300ms;
+		}
 	}
 }
 
