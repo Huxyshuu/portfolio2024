@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.scss';
 import Sidebar from './components/sidebar/Sidebar';
-import Card from './components/workcard/WorkCard';
+// import Card from './components/workCard/WorkCard';
+import WorkDisplay from './components/workDisplay/WorkDisplay';
 import Skills from './components/skillIcons/Skills';
 import './fonts/Fonts.scss';
 import { Icon } from '@iconify/react';
@@ -16,8 +17,8 @@ function App() {
         <Sidebar open={open} setOpen={setOpen}/>
         <div id="sidebarMargin">
           <div id="home">
-            <h1 id='title'>Hi,<br/>I&apos;m <span id="H">H</span>ugo,<br/>professional dumbass</h1>,
-            <p>Mechanical Engineering Student / Programmer</p>
+            <h1 id='title'>Hi,<br/>I&apos;m <span id="H">H</span>ugo,<br/>engineering student</h1>,
+            <p>Mechanical Engineer/ Programmer</p>
             <button>Contact me!</button>
             <div id="scrollDown">
               <p id="text-down">Scroll down for more!</p>
@@ -35,15 +36,16 @@ function App() {
                 </div>
               </div>
               
-              <h1>Work</h1>
+              <h1>Portfolio</h1>
               <div id="workContent">
-                <p>A small carousel of the most recent projects I&apos;ve worked on. 
+                <p id="workText">A small carousel of the most recent projects I&apos;ve worked on. 
                   Currently consisting mostly of hobby projects that were a 
                   good source of fun and challenge to better my skills. 
                   If the code button is grayed out, you can contact me for 
                   more information.
                 </p>
-                <Card />
+                {/* <Card /> */}
+                <WorkDisplay />
               </div>
               <div className="ellipse-gray"></div>
             </div>
