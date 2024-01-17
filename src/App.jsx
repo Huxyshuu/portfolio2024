@@ -36,7 +36,7 @@ function App() {
                 </div>
               </div>
               
-              <h1>Portfolio</h1>
+              <h1>Portfolio<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
               <div id="workContent">
                 <p id="workText">A small carousel of the most recent projects I&apos;ve worked on. 
                   Currently consisting mostly of hobby projects that were a 
@@ -58,7 +58,7 @@ function App() {
                 </div>
                 <div className="ellipse-copper"></div>
               </div>
-              <h1>About</h1>
+              <h1>About<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
               <div>
                 <p>Hi, I&apos;m a Front-End Developer located in Finland. 
                   I love programming and designing the interwebs as well as 
@@ -77,7 +77,7 @@ function App() {
                   <Icon id="divider-icon" icon="carbon:skill-level-intermediate" />
                 </div>
               </div>
-              <h1>Skills</h1>
+              <h1>Skills<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
               <Skills />
             </div>
             <div className="section" id="contact">
@@ -88,7 +88,7 @@ function App() {
                   <Icon id="divider-icon" icon="ic:outline-email" />
                 </div>
               </div>
-              <h1>Contact</h1>
+              <h1>Contact<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
             </div>
           </div>
         </div>

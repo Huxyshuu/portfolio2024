@@ -29,6 +29,8 @@ export default function WorkCard() {
         }
     ]
 
+
+    
     const changeCard = (dir) => {
         const card = document.getElementById('cardHolder');
         if (dir === 'left') {

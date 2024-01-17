@@ -1,24 +1,162 @@
-.work-content {
-    flex-direction: column;
-    align-items: flex-end;
-    display: flex;
 
-    .thumbnail {
-        width: 100%;
-        max-height: 300px;
-        min-height: 300px;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        transition: filter .3s;
+body {
+    background-color: #eeeeea;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    filter: grayscale(1);
+
+    .row {
+        color: white;
         display: flex;
-    
-        img {
-            width: 100%;
-            height: 100%;
-            max-width: none;
-            object-fit: cover;
+        flex-wrap: nowrap;
+
+        .icon {
+            background: var(--dark);
+            color: white;
+            border-radius: 50%;
+            width: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+        }
+
+        .description {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            height: 80px;
+            width: 20rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition-delay: .3s;
+            transition: all .3s ease;
+
+            p {
+                color: var(--dark);
+                padding-top: 5px;
+            }
+
+            h4 {
+                text-transform: uppercase;
+                font-family: 'Butler', sans-serif;
+                letter-spacing: 0.1rem;
+                color: var(--highlight-color);
+                text-shadow: 0 0 0.2rem black;
+            }
+        }
+
+        .buttonContainer {
+            position: relative;
+            right: -7.5rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                background: var(--dark);
+                color: white;
+                border-radius: 50%;
+                border: none;
+                width: 3rem;
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px;
+                z-index: 10;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 3.5rem;
+                height: 3.5rem;
+                background: linear-gradient(var(--highlight-color), transparent);
+                border-radius: 50%;
+                animation: spinJutsu 2s linear infinite;
+            }
+
+            @keyframes spinJutsu {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(350deg);
+                }
+            }
         }
     }
 }
 
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+    filter: grayscale(0);
+}
+
+input:hover + label {
+    filter: grayscale(0);
+    box-shadow: 0 0 0.2rem 0.2rem var(--highlight-color);
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('/kokkikawaii.png');
+}
+.card[for="c2"] {
+    background-image: url('/cryptostorage.png');
+}
+.card[for="c3"] {
+    background-image: url('/pipeflow.png');
+}
+.card[for="c4"] {
+    background-image: url('/cadproject.png');
+}

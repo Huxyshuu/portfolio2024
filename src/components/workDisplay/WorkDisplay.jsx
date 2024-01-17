@@ -1,57 +1,62 @@
-import {useState} from 'react'
 import './WorkDisplay.scss';
-import { Icon } from '@iconify/react';
 
 export default function WorkDisplay() {
 
-    const [currentCard, setCurrentCard] = useState(0);
-
-    const cards = [
-        {
-            title: 'KokkiKawaii',
-            img: '/kokkikawaii.png',
-            desc: 'A full stack website that I created for me and my partner to use as a recipe app, to save our favorite recipes and retrieve them at any time.',
-            techs: ['HTML & CSS', 'Javascript', 'React', 'MongoDB', 'Node.js', 'Express'],
-            demo: 'https://reclib.vercel.app/',
-            code: 'unavailable'
-        },
-        {
-            title: 'Project 2',
-            img: 'https://c4.wallpaperflare.com/wallpaper/978/275/707/hecarim-league-of-legends-riot-games-high-noon-fire-hd-wallpaper-preview.jpg',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-            techs: ['HTML & CSS', 'Javascript', 'React', 'MongoDB', 'Python', 'NodeJS'],
-        },
-        {
-            title: 'Project 3',
-            img: 'https://c4.wallpaperflare.com/wallpaper/50/914/446/spirit-blossom-ahri-league-of-legends-ahri-league-of-legends-riot-games-hd-wallpaper-preview.jpg',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, at! Lorem sit amet consectetur adipisicing elit.',
-            techs: ['HTML & CSS', 'Javascript', 'React', 'Responsivness'],
-        }
-    ]
-
-    const changeCard = (dir) => {
-        const card = document.getElementById('cardHolder');
-        if (dir === 'left') {
-            setCurrentCard(
-                currentCard === 0 ? cards.length - 1 : currentCard - 1
-            )
-            card.style.animation = "slide-in-fwd-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
-        }
-        if (dir === 'right') {
-            setCurrentCard(
-                currentCard === cards.length - 1 ? 0 : currentCard + 1
-            )
-            card.style.animation = "slide-in-fwd-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
-        }
-        setTimeout(() => {
-            card.style.animation = "0";
-        }, 400)
-    }
-
     return (
-        <div className="work-content">
-            <div className="thumbnail">
-            <img src={cards[currentCard].img} alt={cards[currentCard].title.toLowerCase()}/>
+        <div className="wrapper">
+            <div className="container">
+                <input type="radio" name="slide" id="c1" defaultChecked />
+                <label htmlFor="c1" className="card">
+                    <div className="row">
+                        <div className="icon">1</div>
+                        <div className="description">
+                            <h4>KokkiKawaii</h4>
+                            <p>A homemade recipe website to store the best dishes</p>
+                        </div>
+                        <div className="buttonContainer">
+                            <button>VIEW</button>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2" />
+                <label htmlFor="c2" className="card">
+                    <div className="row">
+                        <div className="icon">2</div>
+                        <div className="description">
+                            <h4>Crypto Storage</h4>
+                            <p>A software solution for bookkeeping transactions</p>
+                        </div>
+                        <div className="buttonContainer">
+                            <button>VIEW</button>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3" />
+                <label htmlFor="c3" className="card">
+                    <div className="row">
+                        <div className="icon">3</div>
+                        <div className="description">
+                            <h4>Pipe Flow</h4>
+                            <p>A course project for simulating fluid flow in pipes</p>
+                        </div>
+                        <div className="buttonContainer">
+                            <button>VIEW</button>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4" />
+                <label htmlFor="c4" className="card">
+                    <div className="row">
+                        <div className="icon">4</div>
+                        <div className="description">
+                            <h4>Hair dryer - CAD MODEL</h4>
+                            <p>A School project</p>
+                        </div>
+                        <div className="buttonContainer">
+                            <button>VIEW</button>
+                        </div>
+                    </div>
+                </label>
             </div>
         </div>
     )
