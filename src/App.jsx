@@ -38,11 +38,11 @@ function App() {
               
               <h1>Portfolio<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
               <div id="workContent">
-                <p id="workText">A small carousel of the most recent projects I&apos;ve worked on. 
-                  Currently consisting mostly of hobby projects that were a 
-                  good source of fun and challenge to better my skills. 
-                  If the code button is grayed out, you can contact me for 
-                  more information.
+                <p id="workText">A small set of hand-picked projects that I&apos;ve been working on. 
+                  Consisting mostly of hobby and school projects that were fun, taughtful and a great 
+                  challenge to better my skills.
+                  <br/><br/>
+                  View the projects for more information on them.
                 </p>
                 {/* <Card /> */}
                 <WorkDisplay />

@@ -76,7 +76,6 @@ body {
                 font-family: 'Butler', sans-serif;
                 letter-spacing: 0.1rem;
                 color: var(--highlight-color);
-                text-shadow: 0 0 0.2rem black;
             }
         }
 
@@ -89,6 +88,8 @@ body {
             align-items: center;
 
             button {
+                font-size: 0.8rem;
+                text-decoration: none;
                 background: var(--dark);
                 color: white;
                 border-radius: 50%;

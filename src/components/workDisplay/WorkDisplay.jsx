@@ -14,7 +14,7 @@ export default function WorkDisplay() {
                             <p>A homemade recipe website to store the best dishes</p>
                         </div>
                         <div className="buttonContainer">
-                            <button>VIEW</button>
+                            <button onClick={() => window.open("https://reclib.vercel.app/", "_blank")}>VIEW</button>
                         </div>
                     </div>
                 </label>
@@ -27,7 +27,7 @@ export default function WorkDisplay() {
                             <p>A software solution for bookkeeping transactions</p>
                         </div>
                         <div className="buttonContainer">
-                            <button>VIEW</button>
+                            <button onClick={() => window.open("https://github.com/Huxyshuu/cryptostorage", "_blank")}>VIEW</button>
                         </div>
                     </div>
                 </label>
@@ -40,7 +40,7 @@ export default function WorkDisplay() {
                             <p>A course project for simulating fluid flow in pipes</p>
                         </div>
                         <div className="buttonContainer">
-                            <button>VIEW</button>
+                            <button onClick={() => window.open("https://github.com/Huxyshuu/CS-A1121_course_project", "_blank")}>VIEW</button>
                         </div>
                     </div>
                 </label>
