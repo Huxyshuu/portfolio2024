@@ -22,7 +22,7 @@ function Sidebar(props) {
     return (
         <div className={'sidebar ' + (open ? 'open' : '')}>
             <div className="sidebar-logo">
-                <img id="side-logo" src={"/public/ht-logo-green-dot.png"} alt="logo" />
+                <img id="side-logo" src={"/ht-logo-green-dot.png"} alt="logo" />
                 <h2 id="sidebar-name">Hugo Tamm</h2>
                 <h3 id="sidebar-url">huxystudios.com</h3>
             </div>
