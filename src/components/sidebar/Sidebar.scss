@@ -10,15 +10,13 @@
 	border-right: 0.1vh solid rgba(255, 255, 255, 0.5);
 	transition: all ease-in-out var(--sidebar_animtime);
 
-	&.open {
-        width: var(--sidebar-width-open);
-    }
-
 	#sidebar-name {
-            opacity: 1;
+        opacity: 1;
     }
     
 	&.open {
+		width: var(--sidebar-width-open);
+
 		#sidebar-url {
 			opacity: 1;
 		}
@@ -42,7 +40,7 @@
 		}
 		.icon-text {
 			opacity: 1;
-			transition-delay: 200ms;
+			transition: opacity ease-in-out var(--sidebar_animtime) 200ms;
 		}
 		.sidebar-icons {
 			width: 17.6vh;
@@ -64,6 +62,10 @@
 .sidebar-logo {
     display: flex;
     flex-direction: column;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 #sidebar-name {
@@ -156,8 +158,7 @@
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
 	opacity: 0;
-	transition: all ease-in-out calc(var(--sidebar_animtime) * 0.4);
-	transition-delay: 50ms;
+	transition: all calc(var(--sidebar_animtime) * 0.4) ease-in-out 50ms;
 	transform: translateX(3.5rem);
 }
 

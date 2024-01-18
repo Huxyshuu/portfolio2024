@@ -63,16 +63,16 @@ body {
             justify-content: center;
             flex-direction: column;
             overflow: hidden;
-            height: 80px;
+            height: 5rem;
             width: 20rem;
             opacity: 0;
-            transform: translateY(30px);
+            transform: translateY(1.875rem);
             transition-delay: .3s;
             transition: all .3s ease;
 
             p {
                 color: var(--gray);
-                padding-top: 5px;
+                padding-top: 0.3rem;
             }
 
             h4 {
@@ -103,7 +103,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 15px;
+                margin: 1rem;
                 z-index: 10;
 
                 &:hover {
@@ -139,7 +139,7 @@ input {
 }
 
 input:checked + label {
-    width: 600px;
+    width: 37.5rem;
     filter: grayscale(0);
 }
 

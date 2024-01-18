@@ -60,15 +60,36 @@ function App() {
               </div>
               <h1>About<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
               <div>
-                <p>Hi, I&apos;m a Front-End Developer located in Finland. 
+                {/* <p>Hi, I&apos;m a Front-End Developer located in Finland. 
                   I love programming and designing the interwebs as well as 
                   finding new interesting ways to solve problems with Python and C#. 
                   I also love to play music! I&apos;m currently studying 
                   Mehcanical Engineering in Aalto University as a B.Sc student.
+                </p> */}
+                <p>Hi, I&apos;m a mechanical engineering student from Finland.
+                  Currently studying as a second year bachelor student in Aalto University.
+                  I love programming, desigining and finding new innovative ways to solve creative
+                  and logical problems. 
+
+                  <br/><br/>
+
+                  I&apos;ve studied computer science on my freetime as well
+                  as taken a few courses in University, such as Python and C.
+                  Through passionate hobby projects I&apos;ve also to love web development
+                  and have created this portfolio along with a few other websites.
+
+                  I&apos;m planning on continuing my studies from mechanical engineering into
+                  software engineering and doing my M.Sc. in computer science.
+
+                  <br/><br/>
+
+                  I&apos;m also passionate about playing the piano, games, powerlifting, 
+                  3D modeling and space!
+                    
                 </p>
               </div>
             </div>
-            <div className="section" id="skills">
+            <div className="section" id="skillSection">
               <div id="divider">
                 <p id="copper-text">SKILLS</p>
                 <div className="ellipse-highlight"></div>
@@ -78,9 +99,14 @@ function App() {
                 </div>
               </div>
               <h1>Skills<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
-              <Skills />
+              <div>
+                <p>Down below are skills, tools and software that I&apos;m proficient with
+                  and that I use in my projects.
+                </p>
+                <Skills />
+              </div>
             </div>
-            <div className="section" id="contact">
+            <div className="section" id="contactSection">
               <div id="divider">
                 <p id="copper-text">CONTACT</p>
                 <div id="divider-line"></div>
