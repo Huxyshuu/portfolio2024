@@ -36,7 +36,7 @@ export default function About() {
     ]
 
     return (
-        <section id='about'>
+        <section id="skills">
             <div id="sideby">
                 <div className="skills">
                     {

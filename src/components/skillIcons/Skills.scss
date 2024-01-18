@@ -12,13 +12,10 @@ font-family: 'Murecho', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Kdam+Thmor+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Murecho:wght@300&display=swap');
 
-#about {
-    height: 100vh;
+#skills {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 5vh;
-    margin-top: 30vh;
 }
 
 #aboutInfo {
@@ -65,28 +62,6 @@ font-family: 'Murecho', sans-serif;
 
 .text-highlights:hover {
     color: var(--highlight-color);
-}
-
-#interwebs:hover::after {
-    content: '';
-    position: absolute;
-    background-image: url(../images/interweb.png);
-    background-repeat: no-repeat;
-    transform: translate(2vh, -2vh);
-    width: 200px;  /* These are just large enough to definitely   */
-    height: 200px; /* contain the image. Image could be any size. */
-    z-index: 12;
-}
-
-#problems:hover::after {
-    content: '';
-    position: absolute;
-    background-image: url(https://projecteuler.net/profile/AsTrone.png);
-    background-repeat: no-repeat;
-    transform: translate(2vh, -2vh);
-    width: 200px;  /* These are just large enough to definitely   */
-    height: 200px; /* contain the image. Image could be any size. */
-    z-index: 12;
 }
 
 

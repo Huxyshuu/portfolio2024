@@ -3,6 +3,7 @@ import './App.scss';
 import Sidebar from './components/sidebar/Sidebar';
 // import Card from './components/workCard/WorkCard';
 import WorkDisplay from './components/workDisplay/WorkDisplay';
+import ContactForm from './components/contactForm/ContactForm';
 import Skills from './components/skillIcons/Skills';
 import './fonts/Fonts.scss';
 import { Icon } from '@iconify/react';
@@ -60,32 +61,29 @@ function App() {
               </div>
               <h1>About<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
               <div>
-                {/* <p>Hi, I&apos;m a Front-End Developer located in Finland. 
-                  I love programming and designing the interwebs as well as 
-                  finding new interesting ways to solve problems with Python and C#. 
-                  I also love to play music! I&apos;m currently studying 
-                  Mehcanical Engineering in Aalto University as a B.Sc student.
-                </p> */}
-                <p>Hi, I&apos;m a mechanical engineering student from Finland.
-                  Currently studying as a second year bachelor student in Aalto University.
-                  I love programming, desigining and finding new innovative ways to solve creative
-                  and logical problems. 
+                <p>Greetings! I&apos;m a second-year bachelor student majoring in 
+                  mechanical engineering at Aalto University in Finland. 
+                  I thrive on the excitement of programming, design, and the constant quest 
+                  for innovative solutions to both creative and logical challenges.
 
                   <br/><br/>
 
-                  I&apos;ve studied computer science on my freetime as well
-                  as taken a few courses in University, such as Python and C.
-                  Through passionate hobby projects I&apos;ve also to love web development
-                  and have created this portfolio along with a few other websites.
-
-                  I&apos;m planning on continuing my studies from mechanical engineering into
-                  software engineering and doing my M.Sc. in computer science.
+                  Beyond my academic pursuits, I&apos;ve delved into computer science 
+                  during my free time, immersing myself in the intricacies of languages like 
+                  Python and C. 
+                  Driven by my enthusiasm, I&apos;ve embraced web development through 
+                  engaging hobby projects, culminating in the creation of this portfolio 
+                  and several other captivating websites. Looking ahead, I am keen on 
+                  transitioning from mechanical engineering to software engineering, 
+                  aiming to pursue my M.Sc. in computer science.
 
                   <br/><br/>
 
-                  I&apos;m also passionate about playing the piano, games, powerlifting, 
-                  3D modeling and space!
-                    
+                  Away from the screen and code, you&apos;ll find me passionately 
+                  engaged in playing the piano, gaming, powerlifting, exploring 3D 
+                  modeling, and marveling at the vast wonders of space! Whether 
+                  you&apos;re an employer, a friend, or just a curious visitor, 
+                  welcome to my world of endless possibilities.
                 </p>
               </div>
             </div>
@@ -115,6 +113,7 @@ function App() {
                 </div>
               </div>
               <h1>Contact<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
+              <ContactForm />
             </div>
           </div>
         </div>
