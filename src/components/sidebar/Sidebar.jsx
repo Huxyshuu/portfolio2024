@@ -24,7 +24,7 @@ function Sidebar(props) {
             <div className="sidebar-logo">
                 <img id="side-logo" src={"/ht-logo-green-dot.png"} alt="logo" />
                 <h2 id="sidebar-name">Hugo Tamm</h2>
-                <h3 id="sidebar-url">huxystudios.com</h3>
+                <h3 id="sidebar-url">hugotamm.com</h3>
             </div>
 
             <div>
