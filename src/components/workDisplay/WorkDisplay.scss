@@ -47,6 +47,11 @@ body {
         transition: .2s cubic-bezier(.28,-0.03,0,.99);
         font-family: 'Butler', sans-serif;
         border-radius: 2rem 2rem 0 0;
+
+        .workDot {
+            color: var(--highlight-color);
+            font-size: 3rem;
+        }
     }
 
     img {

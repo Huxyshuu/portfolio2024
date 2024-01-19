@@ -31,6 +31,10 @@ font-family: 'Roboto Condensed', sans-serif; */
   background-color: var(--dark);
 }
 
+.greenDot {
+  color: var(--highlight-color);
+}
+
 #sidebarMargin {
   margin-left: var(--sidebar-width-closed);
   transition: all ease-in-out var(--sidebar_animtime);

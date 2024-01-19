@@ -38,7 +38,7 @@ function App() {
                 </div>
               </div>
               
-              <h1>Portfolio<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
+              <h1>Portfolio<span className="greenDot">.</span></h1>
               <div id="workContent">
                 <p id="workText">A small set of hand-picked projects that I&apos;ve been working on. 
                   Consisting mostly of hobby and school projects that were fun, taughtful and a great 
@@ -60,7 +60,7 @@ function App() {
                 </div>
                 <div className="ellipse-copper"></div>
               </div>
-              <h1>About<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
+              <h1>About<span className=".greenDot">.</span></h1>
               <div id="aboutContent">
                 <p>Greetings! I&apos;m a second-year bachelor student majoring in 
                   mechanical engineering at Aalto University in Finland. 
@@ -102,7 +102,7 @@ function App() {
                   <Icon id="divider-icon" icon="carbon:skill-level-intermediate" />
                 </div>
               </div>
-              <h1>Skills<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
+              <h1>Skills<span className=".greenDot">.</span></h1>
               <div>
                 <p>Down below are skills, tools and software that I&apos;m proficient with
                   and that I use in my projects.
@@ -118,7 +118,7 @@ function App() {
                   <Icon id="divider-icon" icon="ic:outline-email" />
                 </div>
               </div>
-              <h1>Contact<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
+              <h1>Contact<span className=".greenDot">.</span></h1>
               {/* <ContactForm /> */}
             </div>
           </div>

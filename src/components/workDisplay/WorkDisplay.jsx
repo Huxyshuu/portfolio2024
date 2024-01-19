@@ -9,7 +9,7 @@ export default function WorkDisplay() {
                 <label htmlFor="c1" className="card">
                     <div>
                         <div>
-                            <h4 className="workName">KokkiKawaii<span style={{color: 'var(--highlight-color)'}}>.</span></h4>
+                            <h4 className="workName">KokkiKawaii<span className="workDot">.</span></h4>
                             <img src={'/kokkikawaii.png'} alt="kokkikawaii" />
                         </div>
                         
@@ -29,7 +29,7 @@ export default function WorkDisplay() {
                 <label htmlFor="c2" className="card">
                     <div>
                         <div>
-                            <h4 className="workName">Crypto Storage<span style={{color: 'var(--highlight-color)'}}>.</span></h4>
+                            <h4 className="workName">Crypto Storage<span className="workDot">.</span></h4>
                             <img src={'/cryptostorage.png'} alt="cryptostorage" />
                         </div>
                         <div className="row">
@@ -48,7 +48,7 @@ export default function WorkDisplay() {
                 <label htmlFor="c3" className="card">
                     <div>
                         <div>
-                            <h4 className="workName">Pipeflow<span style={{color: 'var(--highlight-color)'}}>.</span></h4>
+                            <h4 className="workName">Pipeflow<span className="workDot">.</span></h4>
                             <img src={'/pipeflow.png'} alt="pipeflow" />
                         </div>
                         <div className="row">
@@ -67,7 +67,7 @@ export default function WorkDisplay() {
                 <label htmlFor="c4" className="card">
                     <div>
                         <div>
-                            <h4 className="workName">Hair dryer<span style={{color: 'var(--highlight-color)'}}>.</span></h4>
+                            <h4 className="workName">Hair dryer<span className="workDot">.</span></h4>
                             <img src={'/cadproject.png'} alt="picture of hair dryer" />
                         </div>
                         <div className="row">
