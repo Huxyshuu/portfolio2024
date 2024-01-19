@@ -39,7 +39,7 @@ export default function WorkDisplay() {
                 </label>
                 <input type="radio" name="slide" id="c3" />
                 <label htmlFor="c3" className="card">
-                    <div>
+                    <div className="card-container">
                         <img src={'/pipeflow.png'} alt="pipeflow" />
                         <div className="row">
                             <div className="icon">3</div>

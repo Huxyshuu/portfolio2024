@@ -126,6 +126,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 
 .mainContent {
+  margin-top: 5rem;
   margin-left: var(--sidebar-width-closed);
   margin-right: 20vh;
   transition: all ease-in-out var(--sidebar_animtime);
@@ -140,7 +141,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 
   .ellipse-copper {
     position: relative;
-    top: 30rem;
+    top: 40rem;
     right: -5rem;
     width: 1px;
     height: 1px;
@@ -210,7 +211,7 @@ font-family: 'Roboto Condensed', sans-serif; */
     }
 
     .section {
-      padding-top: 15vh;
+      padding-top: 5vh;
 
       h1 {
         font-size: 7vh;
@@ -240,6 +241,11 @@ font-family: 'Roboto Condensed', sans-serif; */
         #workText {
           width: 30rem;
         }
+      }
+
+      #aboutContent {
+        display: flex;
+        gap: 2rem;
       }
     }
 }

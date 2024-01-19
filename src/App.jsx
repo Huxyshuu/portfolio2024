@@ -3,6 +3,7 @@ import './App.scss';
 import Sidebar from './components/sidebar/Sidebar';
 // import Card from './components/workCard/WorkCard';
 import WorkDisplay from './components/workDisplay/WorkDisplay';
+import ImageDisplay from './components/imageDisplay/ImageDisplay';
 import ContactForm from './components/contactForm/ContactForm';
 import Skills from './components/skillIcons/Skills';
 import './fonts/Fonts.scss';
@@ -60,7 +61,7 @@ function App() {
                 <div className="ellipse-copper"></div>
               </div>
               <h1>About<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
-              <div>
+              <div id="aboutContent">
                 <p>Greetings! I&apos;m a second-year bachelor student majoring in 
                   mechanical engineering at Aalto University in Finland. 
                   I thrive on the excitement of programming, design, and the constant quest 
@@ -85,6 +86,10 @@ function App() {
                   you&apos;re an employer, a friend, or just a curious visitor, 
                   welcome to my world of endless possibilities.
                 </p>
+                <ImageDisplay images={[{image: "/blender1.png", desc: "Blender model of 2B pod from a game", alt: "Model of a robot"}, 
+                                       {image: "/blender2.png", desc: "Mechanical spider model", alt: "Model of a spider"},
+                                       {image: "/blender1.png", desc: "Hi3", alt: "blender1"}, 
+                                       {image: "/blender2.png", desc: "Hi4", alt: "blender2"},]}/>
               </div>
             </div>
             <div className="section" id="skillSection">

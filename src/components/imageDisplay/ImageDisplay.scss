@@ -1,0 +1,109 @@
+.imageContainer {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    border-radius: 2rem;
+    box-shadow: 0px 0.6rem 2rem -0.3rem rgba(0,0,0,0.8);
+    background-color: var(--dark);
+    z-index: 10;
+    overflow: hidden;
+
+    img {
+        padding: 0;
+        margin: 0;
+        height: 25rem;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    p {
+        padding-top: 1rem;
+        margin: 0;
+        background-color: rgba(0,0,0,0.5);
+        height: 3rem;
+        width: 100%;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .radioContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 0 0 2rem 2rem;
+        padding-bottom: 1rem;
+
+        /* The container */
+        .labelContainer {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        /* Hide the browser's default radio button */
+        .labelContainer input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+        
+        /* On mouse-over, add a grey background color */
+        .labelContainer:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+        
+        /* When the radio button is checked, add a blue background */
+        .labelContainer input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+        
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        
+        /* Show the indicator (dot/circle) when checked */
+        .labelContainer input:checked ~ .checkmark:after {
+            display: block;
+        }
+        
+        /* Style the indicator (dot/circle) */
+        .labelContainer .checkmark:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+    }
+}

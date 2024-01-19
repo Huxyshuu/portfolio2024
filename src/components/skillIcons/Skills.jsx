@@ -18,7 +18,11 @@ export default function About() {
         <Icon icon="logos:figma" />,
         <Icon icon="vscode-icons:file-type-photoshop" />,
         <Icon icon="vscode-icons:file-type-arduino" />,
-        <Icon icon="flat-color-icons:google" />
+        <Icon icon="flat-color-icons:google" />,
+        <Icon icon="logos:sqlite" />,
+        <Icon icon="devicon:mongodb-wordmark" />,
+        <Icon icon="devicon:c" />,
+        <Icon icon="carbon:cad" />
     ]
     const skillNames = [
         'html',
@@ -32,7 +36,11 @@ export default function About() {
         'figma',
         'photoshop',
         'arduino',
-        'google'
+        'google',
+        'sqlite',
+        'mongodb',
+        'c',
+        'cad',
     ]
 
     return (

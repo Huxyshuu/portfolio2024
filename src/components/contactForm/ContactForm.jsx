@@ -4,7 +4,8 @@ export default function ContactForm() {
   return (
     <div>
         <h3>Let&apos;s chat!</h3>
-        <form action="https://formsubmit.co/38c4dba6f8061f9b985b9c6d425ea049" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="8d741132-4400-4c09-a235-9f1a65a25beb"/>
             <input type="text" name="Name" placeholder="Name" required/>
             <input type="email" name="Email" placeholder="Email" required/>
             <textarea name="Message" id="contactMessage" placeholder="Message" 
