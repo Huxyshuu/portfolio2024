@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./ImageDisplay.scss"
 
 export default function ImageDisplay(props) {
@@ -7,6 +7,17 @@ export default function ImageDisplay(props) {
 
     const [currentImage, setCurrentImage] = useState(0);
 
+    useEffect(() => {
+
+      const interval = setInterval(() => {
+        if (currentImage == imageList.length - 1) {
+          setCurrentImage(0);
+        } else {
+          setCurrentImage((t) => t + 1);
+        }
+      }, 6000);
+      return () => clearInterval(interval);
+    }, [currentImage])
 
 
   return (

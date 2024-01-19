@@ -81,7 +81,7 @@
         
         /* When the radio button is checked, add a blue background */
         .labelContainer input:checked ~ .checkmark {
-            background-color: #2196F3;
+            background-color: var(--highlight-color);
         }
         
         /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -103,7 +103,7 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: white;
+            background: var(--white);
         }
     }
 }

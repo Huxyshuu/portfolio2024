@@ -22,7 +22,14 @@ export default function About() {
         <Icon icon="logos:sqlite" />,
         <Icon icon="devicon:mongodb-wordmark" />,
         <Icon icon="devicon:c" />,
-        <Icon icon="carbon:cad" />
+        <Icon icon="carbon:cad" />,
+        <Icon icon="devicon:matlab" />,
+        <Icon icon="fa6-brands:node" />,
+        <Icon icon="devicon:scala-wordmark" />,
+        <Icon icon="logos:blender" />,
+        <Icon icon="vscode-icons:file-type-excel" />,
+        <Icon icon="logos:unity" />,
+        <Icon icon="logos:firebase" />,
     ]
     const skillNames = [
         'html',
@@ -41,6 +48,13 @@ export default function About() {
         'mongodb',
         'c',
         'cad',
+        'matlab',
+        'nodejs',
+        'scala',
+        'blender',
+        'excel',
+        'unity',
+        'firebase',
     ]
 
     return (
