@@ -8,7 +8,11 @@ export default function WorkDisplay() {
                 <input type="radio" name="slide" id="c1" defaultChecked />
                 <label htmlFor="c1" className="card">
                     <div>
-                        <img src={'/kokkikawaii.png'} alt="kokkikawaii" />
+                        <div>
+                            <h4 className="workName">KokkiKawaii<span style={{color: 'var(--highlight-color)'}}>.</span></h4>
+                            <img src={'/kokkikawaii.png'} alt="kokkikawaii" />
+                        </div>
+                        
                         <div className="row">
                             <div className="icon">1</div>
                             <div className="description">
@@ -24,7 +28,10 @@ export default function WorkDisplay() {
                 <input type="radio" name="slide" id="c2" />
                 <label htmlFor="c2" className="card">
                     <div>
-                        <img src={'/cryptostorage.png'} alt="cryptostorage" />
+                        <div>
+                            <h4 className="workName">Crypto Storage<span style={{color: 'var(--highlight-color)'}}>.</span></h4>
+                            <img src={'/cryptostorage.png'} alt="cryptostorage" />
+                        </div>
                         <div className="row">
                             <div className="icon">2</div>
                             <div className="description">
@@ -39,8 +46,11 @@ export default function WorkDisplay() {
                 </label>
                 <input type="radio" name="slide" id="c3" />
                 <label htmlFor="c3" className="card">
-                    <div className="card-container">
-                        <img src={'/pipeflow.png'} alt="pipeflow" />
+                    <div>
+                        <div>
+                            <h4 className="workName">Pipeflow<span style={{color: 'var(--highlight-color)'}}>.</span></h4>
+                            <img src={'/pipeflow.png'} alt="pipeflow" />
+                        </div>
                         <div className="row">
                             <div className="icon">3</div>
                             <div className="description">
@@ -56,7 +66,10 @@ export default function WorkDisplay() {
                 <input type="radio" name="slide" id="c4" />
                 <label htmlFor="c4" className="card">
                     <div>
-                        <img src={'/cadproject.png'} alt="picture of hairblower" />
+                        <div>
+                            <h4 className="workName">Hair dryer<span style={{color: 'var(--highlight-color)'}}>.</span></h4>
+                            <img src={'/cadproject.png'} alt="picture of hair dryer" />
+                        </div>
                         <div className="row">
                             <div className="icon">4</div>
                             <div className="description">
