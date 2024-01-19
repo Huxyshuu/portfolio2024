@@ -88,8 +88,9 @@ function App() {
                 </p>
                 <ImageDisplay images={[{image: "/blender1.png", desc: "Blender model of 2B pod from a game", alt: "Model of a robot"}, 
                                        {image: "/blender2.png", desc: "Mechanical spider model", alt: "Model of a spider"},
-                                       {image: "/blender1.png", desc: "Hi3", alt: "blender1"}, 
-                                       {image: "/blender2.png", desc: "Hi4", alt: "blender2"},]}/>
+                                       {image: "/blender3.png", desc: "Blender model of a small japanese house", alt: "Model of a house"},
+                                       {image: "/piano1.jpeg", desc: "Piano & cat", alt: "Picture of a piano and a cat"}, 
+                                       {image: "/piano2.jpeg", desc: "Raspberry Pi lights on a piano", alt: "Rainbow lights on a piano"},]}/>
               </div>
             </div>
             <div className="section" id="skillSection">
@@ -118,7 +119,7 @@ function App() {
                 </div>
               </div>
               <h1>Contact<span style={{color: 'var(--highlight-color)'}}>.</span></h1>
-              <ContactForm />
+              {/* <ContactForm /> */}
             </div>
           </div>
         </div>

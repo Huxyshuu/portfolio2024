@@ -7,68 +7,120 @@ import { Icon } from '@iconify/react';
 export default function About() {
 
     const skillIcons = [
-        <Icon icon="vscode-icons:file-type-html" />,
-        <Icon icon="vscode-icons:file-type-css" />,
-        <Icon icon="logos:javascript" />,
-        <Icon icon="vscode-icons:file-type-reactjs" />,
-        <Icon icon="vscode-icons:file-type-python" />,
-        <Icon icon="logos:c-sharp" />,
-        <Icon icon="logos:git-icon" />,
-        <Icon icon="carbon:logo-github" />,
-        <Icon icon="logos:figma" />,
-        <Icon icon="vscode-icons:file-type-photoshop" />,
-        <Icon icon="vscode-icons:file-type-arduino" />,
-        <Icon icon="flat-color-icons:google" />,
-        <Icon icon="logos:sqlite" />,
-        <Icon icon="devicon:mongodb-wordmark" />,
-        <Icon icon="devicon:c" />,
-        <Icon icon="carbon:cad" />,
-        <Icon icon="devicon:matlab" />,
-        <Icon icon="fa6-brands:node" />,
-        <Icon icon="devicon:scala-wordmark" />,
-        <Icon icon="logos:blender" />,
-        <Icon icon="vscode-icons:file-type-excel" />,
-        <Icon icon="logos:unity" />,
-        <Icon icon="logos:firebase" />,
-    ]
-    const skillNames = [
-        'html',
-        'css',
-        'javascript',
-        'react',
-        'python',
-        'csharp',
-        'git',
-        'github',
-        'figma',
-        'photoshop',
-        'arduino',
-        'google',
-        'sqlite',
-        'mongodb',
-        'c',
-        'cad',
-        'matlab',
-        'nodejs',
-        'scala',
-        'blender',
-        'excel',
-        'unity',
-        'firebase',
+        {
+            icon: <Icon icon="vscode-icons:file-type-html" />, 
+            name: 'html',
+            category: 'f'
+        },
+        {
+            icon: <Icon icon="vscode-icons:file-type-css" />, 
+            name: 'css',
+            category: 'f'
+        },
+        {
+            icon: <Icon icon="logos:javascript" />, 
+            name: 'javascript',
+            category: 'b'
+        },
+        {
+            icon: <Icon icon="vscode-icons:file-type-reactjs" />, 
+            name: 'react',
+            category: 'b'
+        },
+        {
+            icon: <Icon icon="vscode-icons:file-type-python" />, 
+            name: 'python',
+            category: 'b'
+        },
+        {
+            icon: <Icon icon="logos:c-sharp" />, 
+            name: 'c#',
+            category: 'b'
+        },
+        {
+            icon: <Icon icon="logos:git-icon" />, 
+            name: 'git',
+            category: 't'
+        },
+        {
+            icon: <Icon icon="carbon:logo-github" />, 
+            name: 'github',
+            category: 't'
+        },
+        {
+            icon: <Icon icon="logos:figma" />, 
+            name: 'figma',
+            category: 't'
+        },
+        {
+            icon: <Icon icon="vscode-icons:file-type-photoshop" />, 
+            name: 'photoshop',
+            category: 't'
+        },
+        {
+            icon: <Icon icon="vscode-icons:file-type-arduino" />, 
+            name: 'arduino', 
+            category: 't'},
+        {
+            icon: <Icon icon="flat-color-icons:google" />, 
+            name: 'google', 
+            category: 't'},
+        {
+            icon: <Icon icon="logos:sqlite" />, 
+            name: 'sqlite', 
+            category: 'b'},
+        {
+            icon: <Icon icon="devicon:mongodb-wordmark" />, 
+            name: 'mongodb', 
+            category: 'b'},
+        {
+            icon: <Icon icon="devicon:c" />, 
+            name: 'c', 
+            category: 'b'},
+        {
+            icon: <Icon icon="carbon:cad" />, 
+            name: 'cad', 
+            category: 't'},
+        {
+            icon: <Icon icon="devicon:matlab" />, 
+            name: 'matlab',
+            category: 't'},
+        {
+            icon: <Icon icon="fa6-brands:node" />, 
+            name: 'node', 
+            category: 'b'},
+        {
+            icon: <Icon icon="devicon:scala-wordmark" />, 
+            name: 'scala', 
+            category: 'b'},
+        {
+            icon: <Icon icon="logos:blender" />, 
+            name: 'blender',
+            category: 't'},
+        {
+            icon: <Icon icon="vscode-icons:file-type-excel" />, 
+            name: 'excel', 
+            category: 't'},
+        {
+            icon: <Icon icon="logos:unity" />, 
+            name: 'unity', 
+            category: 't'},
+        {
+            icon: <Icon icon="logos:firebase" />, 
+            name: 'firebase', 
+            category: 'b'},
     ]
 
     return (
-        <section id="skills">
-            <div id="sideby">
-                <div className="skills">
-                    {
-                        skillIcons.map((tech, i) => {
-                            return <p key={skillNames[i]} id={skillNames[i]}>{tech}</p>
-                        })
-                    }
-                </div>
-            </div>
-            
-        </section>
+        <div className="skills">
+            {
+                skillIcons.map((skill, index) => {
+                    return <div key={skill.name + "_" + index}>
+                        {skill.icon}
+                        <p>{skill.name}</p>
+                    </div>
+                })
+            }
+        </div>
     )
 }
