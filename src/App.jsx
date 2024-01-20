@@ -90,7 +90,7 @@ function App() {
                                        {image: "/blender2.png", desc: "Mechanical spider model", alt: "Model of a spider"},
                                        {image: "/blender3.png", desc: "Blender model of a small japanese house", alt: "Model of a house"},
                                        {image: "/piano1.jpeg", desc: "Piano & cat", alt: "Picture of a piano and a cat"}, 
-                                       {image: "/piano2.jpeg", desc: "Raspberry Pi lights on a piano", alt: "Rainbow lights on a piano"},]}/>
+                                       {image: "/piano2.jpeg", desc: "Interactive lights on a piano using Raspberry Pi", alt: "Rainbow lights on a piano"},]}/>
               </div>
             </div>
             <div className="section" id="skillSection">
