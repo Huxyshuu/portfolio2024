@@ -4,7 +4,7 @@ import './ContactForm.scss'
 export default function ContactForm() {
   return (
     <div>
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form id="contact-form" action="" method="POST">
             <input type="hidden" name="access_key" value="8d741132-4400-4c09-a235-9f1a65a25beb"/>
             <div id="contact-sender-info">
               <input id="contact-name" type="text" name="Name" placeholder="Name" required/>
@@ -12,7 +12,7 @@ export default function ContactForm() {
             </div>
             <textarea name="Message" id="contactMessage" placeholder="Message" 
             cols="30" rows="10" required></textarea>
-            <button type="submit">Send</button>
+            <button>Send (out of order)</button>
         </form>
     </div>
   )

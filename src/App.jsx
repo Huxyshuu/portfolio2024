@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.scss';
 import Sidebar from './components/sidebar/Sidebar';
 // import Card from './components/workCard/WorkCard';
@@ -13,10 +13,25 @@ function App() {
 
   const [open, setOpen] = useState(false);
 
+  const [isSmall, setIsSmall] = useState();
+
+  useEffect(() => {
+    const checkWindowSize = () => {
+        setIsSmall(window.innerWidth < 1300 ? true : false);
+    }
+
+    window.addEventListener('resize', checkWindowSize);
+    checkWindowSize();
+
+    return () => {
+      window.removeEventListener('resize', checkWindowSize);
+    }
+  })
+
   return (
     <>
       <div className="App">
-        <Sidebar open={open} setOpen={setOpen}/>
+        <Sidebar open={open} setOpen={setOpen} isSmall={isSmall}/>
         <div id="sidebarMargin">
           <div id="home">
             <h1 id='title'>Hi,<br/>I&apos;m <span id="H">H</span>ugo,<br/>engineering student</h1>,
