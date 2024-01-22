@@ -119,8 +119,12 @@ function App() {
                   <Icon id="divider-icon" icon="ic:outline-email" />
                 </div>
               </div>
-              <h1>Contact<span className="greenDot">.</span></h1>
-              {/* <ContactForm /> */}
+              <h1>Let&apos;s chat<span className="greenDot">.</span></h1>
+              <div>
+                <p>I&apos;m interested in meeting new amazing people to collaborate with, 
+                  so don&apos;t hesitate to send me a message. Let&apos;s work together!</p>
+                <ContactForm />
+              </div>
             </div>
           </div>
         </div>
