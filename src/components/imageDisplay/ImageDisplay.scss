@@ -109,3 +109,46 @@
         }
     }
 }
+
+@media screen and (max-width: 440px) {
+    .imageContainer {
+        display: flex;
+        margin-top: 3vh;
+        width: 90vw;
+        height: 70vh;
+    
+        img {
+            height: 83%;
+        }
+    
+        p {
+            font-size: 3vw;
+            height: 2vh;
+            z-index: 11;
+        }
+    
+        .radioContainer {
+            padding-bottom: 3vh;
+    
+            /* The container */
+            .labelContainer {
+                padding-left: 8vw;
+                margin-bottom: 1vh;
+                font-size: 3vh;
+            }
+            
+            /* Create a custom radio button */
+            .checkmark {
+                height: 3.5vh;
+                width: 3.5vh;
+            }
+            
+            .labelContainer .checkmark:after {
+                top: 0.35rem;
+                left: 0.35rem;
+                width: 2vh;
+                height: 2vh;
+            }
+        }
+    }
+}

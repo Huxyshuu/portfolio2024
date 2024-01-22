@@ -77,7 +77,7 @@ function App() {
               </div>
               <h1>About<span className="greenDot">.</span></h1>
               <div id="aboutContent">
-                <p>Greetings! I&apos;m a second-year bachelor student majoring in 
+                <p id="about-text">Greetings! I&apos;m a second-year bachelor student majoring in 
                   mechanical engineering at Aalto University in Finland. 
                   I thrive on the excitement of programming, design, and the constant quest 
                   for innovative solutions to both creative and logical challenges.

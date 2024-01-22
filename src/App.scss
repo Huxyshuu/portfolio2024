@@ -368,16 +368,21 @@ font-family: 'Roboto Condensed', sans-serif; */
 
       #workContent {
         flex-direction: column;
-        gap: 2rem;
+        gap: 0;
 
         #workText {
-          width: 30rem;
+          width: 90vw;
         }
       }
 
       #aboutContent {
         display: flex;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 0;
+
+        #about-text {
+          width: 90vw;
+        }
       }
     }
   }
