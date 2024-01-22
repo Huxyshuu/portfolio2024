@@ -60,7 +60,7 @@ function App() {
                 </div>
                 <div className="ellipse-copper"></div>
               </div>
-              <h1>About<span className=".greenDot">.</span></h1>
+              <h1>About<span className="greenDot">.</span></h1>
               <div id="aboutContent">
                 <p>Greetings! I&apos;m a second-year bachelor student majoring in 
                   mechanical engineering at Aalto University in Finland. 
@@ -102,7 +102,7 @@ function App() {
                   <Icon id="divider-icon" icon="carbon:skill-level-intermediate" />
                 </div>
               </div>
-              <h1>Skills<span className=".greenDot">.</span></h1>
+              <h1>Expertise<span className="greenDot">.</span></h1>
               <div>
                 <p>Down below are skills, tools and software that I&apos;m proficient with
                   and that I use in my projects.
@@ -118,7 +118,7 @@ function App() {
                   <Icon id="divider-icon" icon="ic:outline-email" />
                 </div>
               </div>
-              <h1>Contact<span className=".greenDot">.</span></h1>
+              <h1>Contact<span className="greenDot">.</span></h1>
               {/* <ContactForm /> */}
             </div>
           </div>
