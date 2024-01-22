@@ -8,7 +8,7 @@ export default function WorkDisplay() {
                 <input type="radio" name="slide" id="c1" defaultChecked />
                 <label htmlFor="c1" className="card">
                     <div>
-                        <div>
+                        <div className="name-image-container">
                             <h4 className="workName">KokkiKawaii<span className="workDot">.</span></h4>
                             <img src={'/kokkikawaii.png'} alt="kokkikawaii" />
                         </div>
@@ -28,7 +28,7 @@ export default function WorkDisplay() {
                 <input type="radio" name="slide" id="c2" />
                 <label htmlFor="c2" className="card">
                     <div>
-                        <div>
+                        <div className="name-image-container">
                             <h4 className="workName">Crypto Storage<span className="workDot">.</span></h4>
                             <img src={'/cryptostorage.png'} alt="cryptostorage" />
                         </div>
@@ -47,7 +47,7 @@ export default function WorkDisplay() {
                 <input type="radio" name="slide" id="c3" />
                 <label htmlFor="c3" className="card">
                     <div>
-                        <div>
+                        <div className="name-image-container">
                             <h4 className="workName">Pipeflow<span className="workDot">.</span></h4>
                             <img src={'/pipeflow.png'} alt="pipeflow" />
                         </div>
@@ -66,7 +66,7 @@ export default function WorkDisplay() {
                 <input type="radio" name="slide" id="c4" />
                 <label htmlFor="c4" className="card">
                     <div>
-                        <div>
+                        <div className="name-image-container">
                             <h4 className="workName">Hair dryer<span className="workDot">.</span></h4>
                             <img src={'/cadproject.png'} alt="picture of hair dryer" />
                         </div>

@@ -328,21 +328,15 @@ font-family: 'Roboto Condensed', sans-serif; */
     }
 
     #divider {
-      display: flex;
-      flex-grow: 1;
-      flex-shrink: 1;
       margin-bottom: 1vh;
 
       p {
         font-size: 1.5vh;
         padding-right: 2rem;
-        display: flex;
-        overflow: hidden;
       }
 
       #divider-line {
-        height: 2px;
-        margin-top: 1.9rem;
+        margin-top: 1.5rem;
         margin-inline: 1vh;
       }
 
@@ -358,31 +352,22 @@ font-family: 'Roboto Condensed', sans-serif; */
     }
   
     .section {
-      padding-top: 5vh;
+      padding-top: 1vh;
 
       h1 {
-        font-size: 7vh;
-        z-index: -1;
-        color: white;
+        font-size: 5vh;
         margin: 0;
-        padding-top: 5vh; 
-        line-height: 1.1;
-        transition: 0.3s ease-in-out;
-        white-space: nowrap;
+        padding-top: 2vh; 
       }
 
       & > div > p {
         font-weight: 200;
         color: #a2a2a2;
-        font-size: 2vh;
-        letter-spacing: 0.1vh;
-        width: 35vw;
+        font-size: 1.8vh;
       }
 
       #workContent {
-        margin: 0;
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 2rem;
 
         #workText {

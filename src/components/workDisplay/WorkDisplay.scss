@@ -174,3 +174,99 @@ input:hover {
 input:checked + label h4.workName {
     opacity: 0;
 }
+
+@media screen and (max-width: 440px) {
+    
+    .container {
+        margin-top: 8vh;
+        height: 100vh;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    
+    .card {
+        height: 8vh;
+        width: 90vw;
+        border-radius: 2rem;
+        margin: 0 0.625rem;
+        box-shadow: 0px 0.6rem 2rem -0.3rem rgba(0,0,0,0.8);
+
+        .name-image-container {
+            display: flex;
+        }
+    
+        .workName {
+            align-self: flex-end;
+            justify-self: flex-end;
+            writing-mode: horizontal-tb;
+            font-size: 3.5vh;
+            height: 8vh;
+            width: 72vw;
+            line-height: 0;
+            margin-left: 18vw;
+            padding-left: 3vw;
+            border-radius: 0 2rem 2rem 0;
+            transform: translateY(7.5vh);
+    
+            .workDot {
+                font-size: 5vh;
+            }
+        }
+    
+        img {
+            height: 30vh;
+            width: 90vw;
+        }
+    
+        .row {
+            height: 8vh;
+
+            .icon {
+                width: 5vh;
+                height: 5vh;
+                margin: 2vh;
+                margin-top: 1.5vh;
+            }
+    
+            .description {
+                height: 7vh;
+                width: 55vw;
+                padding-top: 1vh;
+
+                p {
+                    font-size: 1.6vh
+                }
+                
+                h4 {
+                    font-size: 1.7vh;
+                }
+            }
+    
+            .buttonContainer {
+                opacity: 0;
+                right: 0;
+                margin-left: auto;
+    
+                button {
+                    font-size: 1.5vh;
+                    width: 5vh;
+                    height: 5vh;
+                }
+    
+                &::before {
+                    width: 6vh;
+                    height: 6vh;
+                }
+            }
+        }
+    }
+    
+    input:checked + label {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    input:checked + label > div > .row > .buttonContainer {
+        opacity: 1;
+    }
+}
