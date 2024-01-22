@@ -18,6 +18,11 @@ export default function About() {
             category: 'f'
         },
         {
+            icon: <Icon icon="vscode-icons:file-type-scss" />, 
+            name: 'Scss',
+            category: 'f'
+        },
+        {
             icon: <Icon icon="logos:javascript" />, 
             name: 'Javascript',
             category: 'f'
@@ -116,12 +121,12 @@ export default function About() {
             <div className="category-container">
                 <div className="category-header">
                     <Icon className="header-icon" icon="uil:react" />
-                    <h4>Frontend dev<br/>React</h4>
+                    <h4><span className="colored-underline-green">Frontend Dev</span><br/>React</h4>
                 </div>
                 <div className="skill-desc-container">
-                    <p>{"<h3>"}</p>
-                    <p id="skill-desc">Passionate about UI/UX. Over 2 years of development experience in HTML, CSS, JS, REACT.</p>
-                    <p>{"<h3>"}</p>
+                    <p>{"<h4>"}</p>
+                    <p id="skill-desc">Passionate about UI/UX. Over 3 years of development experience through many projects using HTML, SCSS, JS, REACT.</p>
+                    <p>{"<h4>"}</p>
                 </div>
                 <div className="category-skills">
                 {
@@ -140,12 +145,12 @@ export default function About() {
             <div className="category-container">
                 <div className="category-header">
                     <Icon className="header-icon" icon="solar:programming-broken" />
-                    <h4>Software<br/>development</h4>
+                    <h4><span className="colored-underline-orange">Software</span><br/>development</h4>
                 </div>
                 <div className="skill-desc-container">
-                    <p>{"<h3>"}</p>
+                    <p>{"<h4>"}</p>
                     <p id="skill-desc">Experience in both functional and OOP: Python, C, Scala, Javascript, SQL, REST API and a few databases, such as MongoDB and Firebase.  </p>
-                    <p>{"<h3>"}</p>
+                    <p>{"<h4>"}</p>
                 </div>
                 <div className="category-skills">
                 {
@@ -163,12 +168,12 @@ export default function About() {
             <div className="category-container">
                 <div className="category-header">
                     <Icon className="header-icon" icon="clarity:design-line" />
-                    <h4>Tools<br/>Programs</h4>
+                    <h4><span className="colored-underline-blue">Tools &</span><br/>Programs</h4>
                 </div>
                 <div className="skill-desc-container">
-                    <p>{"<h3>"}</p>
-                    <p id="skill-desc">Passionate about UI/UX. Over 2 years of development experience in HTML, CSS, JS, REACT</p>
-                    <p>{"<h3>"}</p>
+                    <p>{"<h4>"}</p>
+                    <p id="skill-desc">Proficient with various design, modelling and functional software. Experience with game development in Unity, and CAD modelling in Creo, 3D modelling in Blender.</p>
+                    <p>{"<h4>"}</p>
                 </div>
                 <div className="category-skills">
                 {

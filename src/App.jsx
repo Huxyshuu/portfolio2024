@@ -90,7 +90,8 @@ function App() {
                                        {image: "/blender2.png", desc: "Mechanical spider model", alt: "Model of a spider"},
                                        {image: "/blender3.png", desc: "Blender model of a small japanese house", alt: "Model of a house"},
                                        {image: "/piano1.jpeg", desc: "Piano & cat", alt: "Picture of a piano and a cat"}, 
-                                       {image: "/piano2.jpeg", desc: "Interactive lights on a piano using Raspberry Pi", alt: "Rainbow lights on a piano"},]}/>
+                                       {image: "/piano2.jpeg", desc: "Interactive lights on a piano using Raspberry Pi", alt: "Rainbow lights on a piano"},
+                                       {image: "/lego-cad.png", desc: "CAD model of a lego figure", alt: "CAD model of a lego figure"}, ]}/>
               </div>
             </div>
             <div className="section" id="skillSection">
@@ -104,8 +105,8 @@ function App() {
               </div>
               <h1>Expertise<span className="greenDot">.</span></h1>
               <div>
-                <p>Down below are skills, tools and software that I&apos;m proficient with
-                  and that I use in my projects.
+                <p>Below are skills, tools and software that I use in projects when developing, designing or modelling. 
+                  I&apos;ve finished the introductory courses for Matlab and Simulink.
                 </p>
                 <Skills />
               </div>

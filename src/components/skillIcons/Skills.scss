@@ -41,6 +41,44 @@ font-family: 'Murecho', sans-serif;
             margin-bottom: 1rem;
             color: var(--white);
 
+            @mixin colored-underline {
+                z-index: 0;
+                position: relative;
+                color: white;
+
+                &::after {
+                transition: all 0.1s ease-in-out;
+                content: "";
+                position: absolute;
+                bottom: 5%;
+                z-index: -1;
+                height: 0.3em;
+                width: 104%;
+                left: -1%;
+                }
+            }
+
+            .colored-underline-green {
+                @include colored-underline;
+                &::after {
+                    background-color: var(--highlight-color);
+                }
+            }
+
+            .colored-underline-orange {
+                @include colored-underline;
+                &::after {
+                    background-color: rgb(200, 107, 14);
+                }
+            }
+
+            .colored-underline-blue {
+                @include colored-underline;
+                &::after {
+                    background-color: rgb(20, 93, 182);
+                }
+            }
+
             .header-icon {
                 font-size: 3rem;
             }
