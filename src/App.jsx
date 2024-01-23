@@ -119,8 +119,8 @@ function App() {
                 </div>
               </div>
               <h1>Expertise<span className="greenDot">.</span></h1>
-              <div>
-                <p>Below are skills, tools and software that I use in projects when developing, designing or modelling. 
+              <div id="skill-content">
+                <p id="skill-text">Below are skills, tools and software that I use in projects when developing, designing or modelling. 
                   I&apos;ve finished the introductory courses for Matlab and Simulink.
                 </p>
                 <Skills />

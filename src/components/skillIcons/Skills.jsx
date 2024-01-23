@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React from 'react';
 import './Skills.scss';
-import './Icons.scss';
 import { Icon } from '@iconify/react';
 
 export default function About() {

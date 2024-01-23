@@ -159,8 +159,79 @@ font-family: 'Murecho', sans-serif;
             }
         }
     }
+}
 
+@media screen and (max-width: 440px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        gap: 2vh;
     
-
+        .category-container {
+            width: 90%;
+            height: 100%;
     
+            .category-header {
+                gap: 4vw;
+                margin-left: 5vh;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+    
+                @mixin colored-underline {
+    
+                    &::after {
+                    height: 0.5rem;
+                    }
+                }
+    
+                .header-icon {
+                    font-size: 5vh;
+                }
+            
+                h4 {
+                    font-size: 3vh;
+                }
+        
+            }
+    
+            .skill-desc-container {
+                margin-left: 3vh;
+                font-size: 2vh;
+    
+    
+                #skill-desc {
+                    padding-left: 4vh;
+                    padding-block: 1vh;
+                    width: 70%;
+                    font-size: 2vh;
+                }
+            }
+        
+            .category-skills {
+                width: 90%;
+                height: 100%;
+                margin-bottom: 2vh;
+                column-gap: 1rem;
+                row-gap: 0;
+                justify-content: center;
+        
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 10vw;
+            
+                    & > :first-child {
+                        font-size: 5vh;
+                    }
+            
+                    & > p {
+                        font-size: 1.5vh;
+                        width: 150%;
+                    }
+                }
+            }
+        }
+    }
 }
