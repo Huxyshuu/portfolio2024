@@ -47,7 +47,7 @@ export default function About() {
             category: 't'
         },
         {
-            icon: <Icon icon="carbon:logo-github" />, 
+            icon: <Icon icon="skill-icons:github-light" />, 
             name: 'Github',
             category: 't'
         },
@@ -82,7 +82,7 @@ export default function About() {
             name: 'C', 
             category: 'b'},
         {
-            icon: <Icon icon="carbon:cad" />, 
+            icon: <Icon style={{filter: "invert(1)"}} icon="carbon:cad" />, 
             name: 'Cad', 
             category: 't'},
         {
@@ -90,7 +90,7 @@ export default function About() {
             name: 'Matlab',
             category: 't'},
         {
-            icon: <Icon icon="fa6-brands:node" />, 
+            icon: <Icon icon="logos:nodejs" />, 
             name: 'Node', 
             category: 'b'},
         {
@@ -106,7 +106,7 @@ export default function About() {
         //     name: 'excel', 
         //     category: 't'},
         {
-            icon: <Icon icon="bxl:unity" />, 
+            icon: <Icon icon="skill-icons:unity-light" />, 
             name: 'Unity', 
             category: 't'},
         {

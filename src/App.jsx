@@ -135,8 +135,8 @@ function App() {
                 </div>
               </div>
               <h1>Let&apos;s chat<span className="greenDot">.</span></h1>
-              <div>
-                <p>I&apos;m interested in meeting new amazing people to collaborate with, 
+              <div id="contact-content">
+                <p id="contact-text">I&apos;m interested in meeting new amazing people to collaborate with, 
                   so don&apos;t hesitate to send me a message. Let&apos;s work together!</p>
                 <ContactForm />
               </div>
