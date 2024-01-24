@@ -30,6 +30,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 .App {
   background-color: var(--dark);
   max-width: 100vw;
+  overflow-x: clip;
 }
 
 .greenDot {
@@ -293,7 +294,6 @@ font-family: 'Roboto Condensed', sans-serif; */
 
   .mainContent {
     margin: 0;
-    overflow-x: clip;
   
     .ellipse-gray {
       margin-left: -10rem;
