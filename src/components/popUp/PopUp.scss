@@ -1,0 +1,109 @@
+.popUp {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    box-shadow: 0px 0.6rem 2rem -0.3rem rgba(0,0,0,0.8);
+    border-radius: 0.2rem 0.2rem 2rem 2rem;
+    color: white;
+    bottom: 2vh;
+    right: 2vw;
+    overflow: hidden;
+
+    > h3 {
+        margin: 1vh;
+        padding: 0;
+        font-size: 3vh;
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 0.4rem;
+        width: 100%;
+        background-color: var(--highlight-color);
+    }
+
+    &.active {
+        display: flex;
+        animation: slideIn 1s ease-in-out, slideOut 1s 5s ease-in-out; 
+
+        &::before {
+            animation: progress 5s linear forwards;
+        }
+    }
+
+    @keyframes progress {
+        100% {
+            right: 100%;
+        }
+    }
+
+    .popUp-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--highlight-color);
+        height: 4vh;
+        width: 4vh;
+        border-radius: 50%;  
+        font-size: 3vh;
+        margin: 1vh;
+    }
+
+    .popUp-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 2vh;
+            margin-bottom: 2vh;
+            margin-right: 1vh;
+        }
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    70% {
+        
+        transform: translateX(6%);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateX(3%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}

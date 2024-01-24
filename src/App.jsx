@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.scss';
 import Sidebar from './components/sidebar/Sidebar';
-// import Card from './components/workCard/WorkCard';
+import PopUp from './components/popUp/PopUp';
 import WorkDisplay from './components/workDisplay/WorkDisplay';
 import ImageDisplay from './components/imageDisplay/ImageDisplay';
 import ContactForm from './components/contactForm/ContactForm';
@@ -32,6 +32,7 @@ function App() {
     <>
       <div className="App">
         <Sidebar open={open} setOpen={setOpen} isSmall={isSmall}/>
+        <PopUp />
         <div id="sidebarMargin">
           <div id="home">
             <h1 id='title'>Hi,<br/>I&apos;m <span id="H">H</span>ugo,<br/>engineering student</h1>,
@@ -61,7 +62,6 @@ function App() {
                   <br/><br/>
                   View the projects for more information on them.
                 </p>
-                {/* <Card /> */}
                 <WorkDisplay />
               </div>
               <div className="ellipse-gray"></div>
