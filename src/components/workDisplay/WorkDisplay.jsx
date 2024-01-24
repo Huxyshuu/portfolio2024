@@ -10,7 +10,7 @@ export default function WorkDisplay() {
                     <div>
                         <div className="name-image-container">
                             <h4 className="workName">KokkiKawaii<span className="workDot">.</span></h4>
-                            <img src={'/kokkikawaii.png'} alt="kokkikawaii" />
+                            <img src={'/kokkikawaii.png'} loading="lazy" alt="kokkikawaii" />
                         </div>
                         
                         <div className="row">
@@ -30,7 +30,7 @@ export default function WorkDisplay() {
                     <div>
                         <div className="name-image-container">
                             <h4 className="workName">Crypto Storage<span className="workDot">.</span></h4>
-                            <img src={'/cryptostorage.png'} alt="cryptostorage" />
+                            <img src={'/cryptostorage.png'} loading="lazy" alt="cryptostorage" />
                         </div>
                         <div className="row">
                             <div className="icon">2</div>
@@ -49,7 +49,7 @@ export default function WorkDisplay() {
                     <div>
                         <div className="name-image-container">
                             <h4 className="workName">Pipeflow<span className="workDot">.</span></h4>
-                            <img src={'/pipeflow.png'} alt="pipeflow" />
+                            <img src={'/pipeflow.png'} loading="lazy" alt="pipeflow" />
                         </div>
                         <div className="row">
                             <div className="icon">3</div>
@@ -68,7 +68,7 @@ export default function WorkDisplay() {
                     <div>
                         <div className="name-image-container">
                             <h4 className="workName">Hair dryer<span className="workDot">.</span></h4>
-                            <img src={'/cadproject.png'} alt="picture of hair dryer" />
+                            <img src={'/cadproject.png'} loading="lazy" alt="picture of hair dryer" />
                         </div>
                         <div className="row">
                             <div className="icon">4</div>

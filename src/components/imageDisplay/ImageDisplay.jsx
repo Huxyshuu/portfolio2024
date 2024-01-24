@@ -22,7 +22,7 @@ export default function ImageDisplay(props) {
 
   return (
     <div className="imageContainer">
-        <img src={imageList[currentImage].image} alt={imageList[currentImage].alt} />
+        <img src={imageList[currentImage].image} loading="lazy" alt={imageList[currentImage].alt} />
         <p>{imageList[currentImage].desc}</p>
         <div className="radioContainer">
             {

@@ -15,11 +15,11 @@ export default function PopUp() {
 
   return (
     <div className="popUp" id="popUp">
-        <h3>Welcome!</h3>
+        <div className="popUp-icon">
+            <h3>!</h3>
+        </div>
         <div className="popUp-text">
-            <div className="popUp-icon">
-                <h3>!</h3>
-            </div>
+            <h3>Welcome!</h3>
             <p>The site is currently being worked on. <br/>Apologies for possible bugs 😃</p>
         </div>
     </div>

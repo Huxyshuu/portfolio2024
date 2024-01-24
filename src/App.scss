@@ -283,7 +283,7 @@ html {
     }
 
     #scrollDown {
-      left: 30vw;
+      left: 25vw;
       bottom: 2vh;
     }
   
@@ -298,34 +298,6 @@ html {
 
   .mainContent {
     margin: 0;
-  
-    .ellipse-gray {
-      margin-left: -10rem;
-      width: 1px;
-      height: 1px;
-      border-radius: 50%;
-      box-shadow: 0 0 20rem 4rem rgb(134, 134, 134);
-    }
-  
-    .ellipse-copper {
-      position: relative;
-      top: 40rem;
-      right: -5rem;
-      width: 1px;
-      height: 1px;
-      border-radius: 50%;
-      box-shadow: 0 0 25rem 6rem rgb(195, 126, 70);
-    }
-  
-    .ellipse-highlight {
-      position: relative;
-      top: 30rem;
-      left: -5rem;
-      width: 1px;
-      height: 1px;
-      border-radius: 50%;
-      box-shadow: 0 0 25rem 4rem var(--highlight-color);
-    }
   
     & > div {
       margin: 5vw;
