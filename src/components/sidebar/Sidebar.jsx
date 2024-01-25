@@ -1,5 +1,6 @@
 import './Sidebar.scss';
 import { Icon } from '@iconify/react';
+import { scrollTo } from '../../utilities/utilities';
 
 function Sidebar(props) {
 
@@ -17,12 +18,6 @@ function Sidebar(props) {
         } else {
             content.style.marginLeft = getComputedStyle(root).getPropertyValue('--sidebar-width-closed')
         }
-    }
-
-    const scrollTo = (destID) => {
-        const destination = document.getElementById(destID);
-
-        destination.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
     }
 
     if (!isSmall) {

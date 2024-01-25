@@ -8,6 +8,7 @@ import ContactForm from './components/contactForm/ContactForm';
 import Skills from './components/skillIcons/Skills';
 import './fonts/Fonts.scss';
 import { Icon } from '@iconify/react';
+import { scrollTo } from './utilities/utilities';
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
           <div id="home">
             <h1 id='title'>Hi,<br/>I&apos;m <span id="H">H</span>ugo,<br/>engineering student</h1>,
             <p>Mechanical Engineer/ Programmer</p>
-            <button>Contact me!</button>
+            <button onClick={() => scrollTo('contactSection')}>Contact me!</button>
             <div id="scrollDown">
               <p id="text-down">Scroll down for more!</p>
               <Icon icon="bx:down-arrow" id="arrow-down"/>

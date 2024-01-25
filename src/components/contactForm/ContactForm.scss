@@ -57,8 +57,70 @@ form {
     }
 }
 
+#thanks {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 45dvh;
+    opacity: 0;
+
+    #thanks-icon {
+        width: 15vh;
+        height: 15vh;
+        background-color: var(--highlight-color);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 6vh;
+    }
+
+    h4 {
+        font-weight: 400;
+        color: white;
+    }
+
+    &.active {
+        animation: appear 1s ease-in-out, disappear 8.5s 1s ease-in-out; 
+        display: flex;
+    }
+
+    &.active + form {
+        display: none;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes disappear {
+        0% {
+            opacity: 1;
+        }
+        99% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+#result {
+    color: white;
+}
+
 @media screen and (min-width: 440px) {
     form {
         width: 50%;
     }
 }
+
