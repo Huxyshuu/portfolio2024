@@ -8,7 +8,7 @@
 
 Here, you'll find a curated collection of my passion projects, each a testament to my creativity and skills. 
 From sleek designs to innovative solutions, my portfolio showcases the best of my work. Dive into the projects, get to know me through snapshots and stories, and let's connect! 
-Drop me a line via the contact form below and let's turn ideas into reality. Welcome to my creative corner! 🚀
+Drop me a line via the contact form on the site and let's turn ideas into reality. Welcome to my creative corner! 🚀
 
 _The website is still under construction as of 08.03.2024 🚧🔨_
 
