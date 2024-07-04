@@ -38,19 +38,19 @@ function Sidebar(props) {
                 <h3 className="sidebar-section">Navigation</h3>
                 <div>
                     <div className="sidebar-icons" onClick={() => scrollTo('workSection')}>
-                        <Icon icon="ic:baseline-work-outline" />
+                        <Icon icon="material-symbols-light:work-outline" />
                         <h3 className="icon-text">Work</h3>
                     </div>
                     <div className="sidebar-icons" onClick={() => scrollTo('aboutSection')}>
-                        <Icon icon="mdi:user-circle-outline" />
+                        <Icon icon="iconamoon:profile-thin" />
                         <h3 className="icon-text">About</h3>
                     </div>
                     <div className="sidebar-icons" onClick={() => scrollTo('skillSection')}>
-                        <Icon icon="carbon:skill-level-intermediate" />
+                        <Icon icon="ph:code-thin" />
                         <h3 className="icon-text">Skills</h3>
                     </div>
                     <div className="sidebar-icons" onClick={() => scrollTo('contactSection')}>
-                        <Icon icon="ic:outline-email" />
+                        <Icon icon="mdi-light:email" />
                         <h3 className="icon-text">Contact</h3>
                     </div>
                 </div>
@@ -61,11 +61,11 @@ function Sidebar(props) {
                 <h3 className="sidebar-section">Socials</h3>
                 <div>
                     <div className="sidebar-media" onClick={() => window.open("https://www.linkedin.com/in/hugotamm/", '_blank', 'noreferrer')}>
-                        <Icon icon="ph:linkedin-logo-bold" />
+                        <Icon icon="circum:linkedin" />
                         <h3 className="icon-text">LinkedIn</h3>
                     </div>
                     <div className="sidebar-media" onClick={() => window.open("https://github.com/Huxyshuu", '_blank', 'noreferrer')}>
-                        <Icon icon="codicon:github" />
+                        <Icon icon="akar-icons:github-outline-fill" />
                         <h3 className="icon-text">GitHub</h3>
                     </div>
                 </div>
